@@ -14,7 +14,73 @@ function triangleArea (){
     // calculate triangleArea 
     const area = 0.5 * base * height;
     console.log('Area of the triwngle is:', area);
+
+    // Display triangle area 
+    const triangleAreaSpan = document.getElementById('triangle-Area');
+    triangleAreaSpan.innerText = area;
+    
+}
+
+// Ractangle area 
+
+function calculateRactangleArea(){
+    // ractangle width input 
+    const ractangleAreaInput = document.getElementById('ractangle-width');
+    const widthText = ractangleAreaInput.value;
+    const width = parseFloat(widthText);
+    console.log(width);
+    
+    // rantangle length input 
+
+    const ractangleLengthAreaInput = document.getElementById('ractangle-length');
+    const langthText = ractangleLengthAreaInput.value;
+    const length = parseFloat(langthText);
+    console.log(length);
+
+    // claculate ractangle area 
+    const area2 = width * length;
+    console.log('this is a ractangle area',area2);
+
+    // display ractangle 
+
+    const ractangleAreaSpan = document.getElementById('ractangle-Area');
+    ractangleAreaSpan.innerText = area2;
+    
+
+    
+}
+
+// parallelogram area 
+function calculateParallelogramArea(){
+    const ParallelogramAreaInput = document.getElementById('parallelogram-width');
+    const parallelogramText = ParallelogramAreaInput.value;
+    const base = parseFloat(parallelogramText);
+    console.log(base);
+// height parallelogram area
+    const parallelogramHeightInput = document.getElementById('parallelogram-length');
+    const heightText = parallelogramHeightInput.value;
+    const height = parseFloat(heightText);
+    console.log(height);
+
+    // calcute parallelogram 
+
+    const area = base * height;
+    console.log(area);
+
+    // disply parallelogram
+    const parallelogramspan = document.getElementById('parallelogram-area');
+    parallelogramspan.innerText = area;
 }
 
 
+function calculateRhombusleArea(){
+const d1 = getRomboshd1();
+console.log(d1);
+}
 
+function getRomboshd1(){
+    const romboshInput = document.getElementById('Rhombus-d1');
+    const romboshText = romboshInput.value;
+    const d1 = parseFloat(romboshText);
+    return d1;
+}
